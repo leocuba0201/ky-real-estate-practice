@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KY Real Estate Exam Practice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>KY Real Estate Exam Practice</h1>
+  </header>
+  <main id="app">
+    <!-- Start Screen -->
+    <section id="start-screen" class="screen active">
+      <p>
+        Welcome! This web app lets you practice every question from the KY
+        Real Estate exam practice tests. Click the button below to begin.
+      </p>
+      <button id="start-btn" class="primary-btn">Start Practice</button>
+    </section>
+
+    <!-- Question Screen -->
+    <section id="question-screen" class="screen">
+      <div class="progress" id="progress">
+        Question <span id="current-number">1</span> of
+        <span id="total-questions">0</span>
+      </div>
+      <div class="question-container">
+        <div id="question-text" class="question-text"></div>
+        <form id="answers-form" class="answers"></form>
+      </div>
+      <div class="nav-buttons">
+        <button id="prev-btn" class="secondary-btn" disabled>Previous</button>
+        <button id="next-btn" class="primary-btn">Next</button>
+      </div>
+    </section>
+
+    <!-- Summary Screen -->
+    <section id="summary-screen" class="screen">
+      <h2>Practice Complete!</h2>
+      <p id="summary-text"></p>
+      <button id="restart-btn" class="primary-btn">Start Over</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      This practice tool presents questions from the Kentucky real estate
+      practice tests. No answer key is included; use this tool for self-study
+      and to familiarize yourself with the exam format.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
